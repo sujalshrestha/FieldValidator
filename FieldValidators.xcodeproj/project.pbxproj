@@ -10,11 +10,14 @@
 		04B8E02C258336E700E91FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E02B258336E700E91FAB /* AppDelegate.swift */; };
 		04B8E02E258336E700E91FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E02D258336E700E91FAB /* SceneDelegate.swift */; };
 		04B8E030258336E700E91FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E02F258336E700E91FAB /* ViewController.swift */; };
-		04B8E033258336E700E91FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B8E031258336E700E91FAB /* Main.storyboard */; };
 		04B8E035258336EB00E91FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B8E034258336EB00E91FAB /* Assets.xcassets */; };
-		04B8E038258336EB00E91FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B8E036258336EB00E91FAB /* LaunchScreen.storyboard */; };
 		04B8E043258336EB00E91FAB /* FieldValidatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E042258336EB00E91FAB /* FieldValidatorsTests.swift */; };
 		04B8E04E258336EB00E91FAB /* FieldValidatorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E04D258336EB00E91FAB /* FieldValidatorsUITests.swift */; };
+		04B8E0692583374800E91FAB /* UIAnchor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E0682583374800E91FAB /* UIAnchor+Ext.swift */; };
+		04B8E0712583377000E91FAB /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E0702583377000E91FAB /* VerticalStackView.swift */; };
+		04B8E0772583379500E91FAB /* FieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E0762583379500E91FAB /* FieldType.swift */; };
+		04B8E07F258337D000E91FAB /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E07E258337D000E91FAB /* FieldValidator.swift */; };
+		04B8E087258337E500E91FAB /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B8E086258337E500E91FAB /* MyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +42,7 @@
 		04B8E02B258336E700E91FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B8E02D258336E700E91FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04B8E02F258336E700E91FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04B8E032258336E700E91FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B8E034258336EB00E91FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04B8E037258336EB00E91FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B8E039258336EB00E91FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B8E03E258336EB00E91FAB /* FieldValidatorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldValidatorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B8E042258336EB00E91FAB /* FieldValidatorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidatorsTests.swift; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		04B8E049258336EB00E91FAB /* FieldValidatorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldValidatorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B8E04D258336EB00E91FAB /* FieldValidatorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidatorsUITests.swift; sourceTree = "<group>"; };
 		04B8E04F258336EB00E91FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B8E0682583374800E91FAB /* UIAnchor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAnchor+Ext.swift"; sourceTree = "<group>"; };
+		04B8E0702583377000E91FAB /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		04B8E0762583379500E91FAB /* FieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldType.swift; sourceTree = "<group>"; };
+		04B8E07E258337D000E91FAB /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		04B8E086258337E500E91FAB /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,12 @@
 		04B8E02A258336E700E91FAB /* FieldValidators */ = {
 			isa = PBXGroup;
 			children = (
+				04B8E0752583378300E91FAB /* Validator */,
+				04B8E0642583370C00E91FAB /* Utils */,
 				04B8E02B258336E700E91FAB /* AppDelegate.swift */,
 				04B8E02D258336E700E91FAB /* SceneDelegate.swift */,
 				04B8E02F258336E700E91FAB /* ViewController.swift */,
-				04B8E031258336E700E91FAB /* Main.storyboard */,
 				04B8E034258336EB00E91FAB /* Assets.xcassets */,
-				04B8E036258336EB00E91FAB /* LaunchScreen.storyboard */,
 				04B8E039258336EB00E91FAB /* Info.plist */,
 			);
 			path = FieldValidators;
@@ -126,6 +132,25 @@
 				04B8E04F258336EB00E91FAB /* Info.plist */,
 			);
 			path = FieldValidatorsUITests;
+			sourceTree = "<group>";
+		};
+		04B8E0642583370C00E91FAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04B8E0682583374800E91FAB /* UIAnchor+Ext.swift */,
+				04B8E0702583377000E91FAB /* VerticalStackView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04B8E0752583378300E91FAB /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				04B8E0762583379500E91FAB /* FieldType.swift */,
+				04B8E07E258337D000E91FAB /* FieldValidator.swift */,
+				04B8E086258337E500E91FAB /* MyTextField.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B8E038258336EB00E91FAB /* LaunchScreen.storyboard in Resources */,
 				04B8E035258336EB00E91FAB /* Assets.xcassets in Resources */,
-				04B8E033258336E700E91FAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +283,12 @@
 			files = (
 				04B8E030258336E700E91FAB /* ViewController.swift in Sources */,
 				04B8E02C258336E700E91FAB /* AppDelegate.swift in Sources */,
+				04B8E0692583374800E91FAB /* UIAnchor+Ext.swift in Sources */,
+				04B8E087258337E500E91FAB /* MyTextField.swift in Sources */,
+				04B8E0772583379500E91FAB /* FieldType.swift in Sources */,
 				04B8E02E258336E700E91FAB /* SceneDelegate.swift in Sources */,
+				04B8E0712583377000E91FAB /* VerticalStackView.swift in Sources */,
+				04B8E07F258337D000E91FAB /* FieldValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +322,6 @@
 			targetProxy = 04B8E04A258336EB00E91FAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		04B8E031258336E700E91FAB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B8E032258336E700E91FAB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04B8E036258336EB00E91FAB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B8E037258336EB00E91FAB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04B8E050258336EB00E91FAB /* Debug */ = {
@@ -438,6 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FieldValidators/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sujal.fieldvalidator.FieldValidators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FieldValidators/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sujal.fieldvalidator.FieldValidators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

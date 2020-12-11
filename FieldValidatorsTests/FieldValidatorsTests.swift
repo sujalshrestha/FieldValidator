@@ -10,24 +10,56 @@ import XCTest
 
 class FieldValidatorsTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    override class func setUp() {
+        super.setUp()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testEmailValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isEmailValid(text: "suj@gmail.com")
+        XCTAssertTrue(isValid)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testEmailInValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isEmailValid(text: "s@s")
+        XCTAssertFalse(isValid)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testMinLengthValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isMinLength(text: "sujalshr")
+        XCTAssertTrue(isValid)
     }
-
+    
+    func testMinLengthInValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isMinLength(text: "sj")
+        XCTAssertFalse(isValid)
+    }
+    
+    func testMaxLengthValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isMaxLength(text: "sujalallalaalalalalala")
+        XCTAssertTrue(isValid)
+    }
+    
+    func testMaxLengthInValid() {
+        let validator = FieldValidator(fieldType: .email)
+        let isValid = validator.isMaxLength(text: "sujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalalasujalallalaalalalalala")
+        XCTAssertFalse(isValid)
+    }
+    
+    func testPasswordValid() {
+        let validator = FieldValidator(fieldType: .password)
+        let isValid = validator.isPasswordValid(text: "Sujal123")
+        XCTAssertTrue(isValid)
+    }
+    
+    func testPasswordInValid() {
+        let validator = FieldValidator(fieldType: .password)
+        let isValid = validator.isPasswordValid(text: "sjl123")
+        XCTAssertFalse(isValid)
+    }
+    
 }
