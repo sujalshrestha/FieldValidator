@@ -53,24 +53,18 @@ class ViewController: UIViewController {
     private func observeEvents() {
         emailField.isValid = { [weak self] (fieldValidMessage) in
             guard let self = self else { return }
-            print("Is Email Valid: ", fieldValidMessage.0)
-            print("Email Message: ", fieldValidMessage.1 ?? "")
             self.emailMessage.text = fieldValidMessage.1 ?? ""
             self.emailMessage.isHidden = fieldValidMessage.0
         }
         
         passwordField.isValid = { [weak self] fieldValidMessage in
             guard let self = self else { return }
-            print("Is Password Valid: ", fieldValidMessage.0)
-            print("Password Message: ", fieldValidMessage.1 ?? "")
             self.passwordMessage.text = fieldValidMessage.1 ?? ""
             self.passwordMessage.isHidden = fieldValidMessage.0
         }
         
         phoneField.isValid = { [weak self] fieldValidMessage in
             guard let self = self else { return }
-            print("Is Phone Valid: ", fieldValidMessage.0)
-            print("Phone Message: ", fieldValidMessage.1 ?? "")
             self.phoneMessage.text = fieldValidMessage.1 ?? ""
             self.phoneMessage.isHidden = fieldValidMessage.0
         }

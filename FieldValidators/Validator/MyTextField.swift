@@ -27,6 +27,8 @@ class MyTextField: UITextField {
         placeholder = title
         borderStyle = .roundedRect
         delegate = self
+        isSecureTextEntry = fieldType == .password
+        if fieldType == .phone { keyboardType = .numberPad }
     }
     
     private func observeEvents() {
